@@ -2,23 +2,25 @@ package com.example.spongebobrecyclerview;
 
 public class DataModel {
     private String name;
-    private String version;
+    private String subtext;
     private int image;
     private int id_;
+    private String description;
 
-    public DataModel(String name, String version, int image, int id_) {
+    public DataModel(String name, String version, int image, int id_, String description) {
         this.name = name;
-        this.version = version;
+        this.subtext = version;
         this.image = image;
         this.id_ = id_;
+        this.description = description;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getVersion() {
-        return version;
+    public String getSubtext() {
+        return subtext;
     }
 
     public int getImage() {
@@ -28,4 +30,7 @@ public class DataModel {
     public int getId_() {
         return id_;
     }
+    public String getDescription() { return description; }
+
 }
+
